@@ -1,0 +1,16 @@
+dontaudit {
+  hardware_info_app
+  proc_version
+  vendor_ims_app
+  grilservice_app
+  oemrilservice_app
+  vendor_rcs_app
+  euiccpixel_app
+  cgroup
+  serialno_prop
+  pixelparts_app
+  proc_tty_drivers
+} default_prop:file r_file_perms;
+
+dontaudit untrusted_app_32 mnt_vendor_file:dir search;
+dontaudit untrusted_app mnt_sdcard_file:lnk_file read;

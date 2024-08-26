@@ -1,4 +1,4 @@
-allow untrusted_app_32 qemu_sf_lcd_density_prop:file { read open getattr };
+allow untrusted_app_32 qemu_sf_lcd_density_prop:file { read open getattr map };
 allow untrusted_app_32 qemu_hw_prop:file { read open getattr };
 allow untrusted_app_32 hwservice_contexts_file:file { getattr };
 allow untrusted_app_32 file_contexts_file:file { getattr };
@@ -8,3 +8,4 @@ allow untrusted_app_32 mac_perms_file:file { getattr };
 #allow untrusted_app_32 proc_version:file { read };
 allow untrusted_app_32 cache_file:lnk_file { read };
 #allow untrusted_app_32 mnt_vendor_file:dir { search };
+#allow untrusted_app_32 proc_tty_drivers:file { read };
