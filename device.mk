@@ -759,7 +759,7 @@ CBD_USE_V2 := true
 CBD_PROTOCOL_SIT := true
 
 # setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk)
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
